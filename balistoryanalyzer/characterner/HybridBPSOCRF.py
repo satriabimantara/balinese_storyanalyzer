@@ -114,6 +114,11 @@ class HybridBPSOCRF:
             self.FILENAME = "logs_bpso_" + \
                 str(datetime.datetime.now().date()) + '.txt'
         self.PATH_LOGS_FILE = path_logs_file + self.FILENAME
+        try:
+            os.makedirs(path_logs_file, exist_ok=True)
+            print("Directory '%s' created successfully" % path_logs_file)
+        except OSError as error:
+            print("Directory '%s' can not be created")
 
     def fit(self, df_fold_train, df_fold_validation):
         self.DATA_TRAIN = df_fold_train

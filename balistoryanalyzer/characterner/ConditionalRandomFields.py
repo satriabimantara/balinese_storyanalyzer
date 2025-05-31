@@ -1,11 +1,6 @@
 from .BaseModel import BaseModel
 from sklearn_crfsuite import CRF as CRFModel
-import sys
-import os
 from sklearn_crfsuite.utils import flatten
-
-ROOT_PATH_FOLDER = os.path.dirname(os.getcwd())
-sys.path.append(ROOT_PATH_FOLDER + '/packages/CharacterIdentificationModule/')
 
 
 class ConditionalRandomFields(BaseModel):

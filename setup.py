@@ -15,7 +15,7 @@ def read_readme():
 
 setup(
     name='balistoryanalyzer',  # The name users will use to pip install
-    version='1.0.1',  # Start with 0.1.0, update as you make changes
+    version='1.0.2',  # Start with 0.1.0, update as you make changes
     # Automatically finds 'balipkg' and any sub-packages
     packages=find_packages(),
 
@@ -42,6 +42,8 @@ setup(
         'scikit-learn==1.2.1',
         'scipy==1.10.0',
         'sklearn-crfsuite==0.3.6',
+        'jaro-winkler==2.0.3',
+        'distlib==0.3.1'
     ],
     entry_points={
         # Optional: If you want to provide command-line scripts
