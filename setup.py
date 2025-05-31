@@ -15,7 +15,7 @@ def read_readme():
 
 setup(
     name='balistoryanalyzer',  # The name users will use to pip install
-    version='1.0.2',  # Start with 0.1.0, update as you make changes
+    version='1.0.3',  # Start with 0.1.0, update as you make changes
     # Automatically finds 'balipkg' and any sub-packages
     packages=find_packages(),
 
